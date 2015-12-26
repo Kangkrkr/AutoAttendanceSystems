@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aas.tera.com.autoattendancesystem.notice.NoticeActivity$PlaceholderFragment">
+
+    <Button
+        android:id="@+id/noticeadd_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="글쓰기"
+        android:background="@drawable/notice_modify"
+        />
+
+    <ListView
+        android:id="@+id/notice_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="#ffffffff"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/noticeadd_bt"/>
+
+</RelativeLayout>

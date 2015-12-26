@@ -1,0 +1,219 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/noticebanner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lecture_name1"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="[강의명]"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@+id/notice_title1"
+                    android:background="#ff009999"/>
+
+                <TextView
+                    android:id="@+id/notice_title1"
+                    android:layout_toRightOf="@+id/lecture_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="공지 제목"/>
+
+                <TextView
+                    android:id="@+id/writer1"
+                    android:layout_below="@+id/lecture_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:text="글쓴이"/>
+
+                <TextView
+                    android:id="@+id/date1"
+                    android:layout_toRightOf="@+id/writer1"
+                    android:layout_alignStart="@+id/notice_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:layout_alignBaseline="@+id/writer1"
+                    android:text="날짜" />
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/line1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ff009999"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/noticebanner1"/>
+
+            <RelativeLayout
+                android:id="@+id/noticebanner2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lecture_name2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="[강의명]"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@+id/notice_title2"
+                    android:background="#ff009999"/>
+                <TextView
+                    android:id="@+id/notice_title2"
+                    android:layout_toRightOf="@+id/lecture_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="공지 제목"/>
+
+                <TextView
+                    android:id="@+id/writer2"
+                    android:layout_below="@+id/lecture_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:text="글쓴이"/>
+
+                <TextView
+                    android:id="@+id/date2"
+                    android:layout_toRightOf="@+id/writer2"
+                    android:layout_alignStart="@+id/notice_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:layout_alignBaseline="@+id/writer2"
+                    android:text="날짜" />
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/line2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ff009999"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/wrap2_2"/>
+
+            <RelativeLayout
+                android:id="@+id/noticebanner3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lecture_name3"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="[강의명]"/>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="25dp"
+                    android:layout_toLeftOf="@+id/notice_title3"
+                    android:background="#ff009999"/>
+                <TextView
+                    android:id="@+id/notice_title3"
+                    android:layout_toRightOf="@+id/lecture_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:text="공지 제목"/>
+
+                <TextView
+                    android:id="@+id/writer3"
+                    android:layout_below="@+id/lecture_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:text="글쓴이"/>
+
+                <TextView
+                    android:id="@+id/date3"
+                    android:layout_toRightOf="@+id/writer3"
+                    android:layout_alignStart="@+id/notice_title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15dp"
+                    android:layout_alignBaseline="@+id/writer3"
+                    android:text="날짜" />
+
+
+
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/line3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ff009999"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/noticebanner3e"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

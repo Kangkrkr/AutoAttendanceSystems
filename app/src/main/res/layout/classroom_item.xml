@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/classroomlayout"
+        android:padding="10dp">
+    <TextView
+        android:id="@+id/buildinglabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buildinglabel"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buildinglabel"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/classroomlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buildinglabel"
+        android:text="@string/classroomlabel"
+        android:textColor="#fff"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/classroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/building"
+        android:layout_toRightOf="@+id/classroomlabel"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/statelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classroomlabel"
+        android:text="@string/statelabel"
+        android:textColor="#993300"/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/classroom"
+        android:layout_toRightOf="@+id/statelabel"
+        android:textColor="#993300"
+        android:textStyle="bold"/>
+    </RelativeLayout>
+</RelativeLayout>

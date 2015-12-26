@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dl_activity_main"
+    tools:context=".MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search_icon"
+            android:layout_margin="3dp"/>
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="강의실 or 상태 검색"
+            android:layout_toRightOf="@+id/search_icon">
+
+            <requestFocus />
+        </EditText>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/search"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:divider="#ff009999"
+            android:dividerHeight="2dp"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/left_layout"
+        layout="@layout/left_page" />
+
+</android.support.v4.widget.DrawerLayout>

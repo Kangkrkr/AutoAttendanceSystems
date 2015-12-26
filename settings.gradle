@@ -1,0 +1,1 @@
+include ':app', ':socketio', ':android-query-full.0.26.8', ':library', ':lib', ':pager-sliding-tab-strip', ':reco-sdk-android_0.2.2'

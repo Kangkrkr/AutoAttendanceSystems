@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/singlenoticeview"
+    android:padding="@dimen/abc_control_padding_material"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/noticetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:text="시험공지"/>
+
+    <RelativeLayout
+        android:id="@+id/wrap1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noticetitle"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/noticewiter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:text="전준철"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/lecturename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:text="창의설계프로젝트1(종합설계)"
+            android:layout_toEndOf="@+id/noticewiter"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/noticeitem_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wrap1"
+        android:layout_marginLeft="15dp"
+        android:text="2015-06-08"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ff009999"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/noticeitem_date"/>
+
+    <TextView
+        android:id="@+id/noticebody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:text="글글글"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/line"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

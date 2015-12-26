@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="aas.tera.com.autoattendancesystem" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyAppTheme" >
+        <activity
+            android:name="aas.project.tera.com.autoattendancesystem.LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.perples.recosdk.RECOBeaconService" />
+
+        <activity
+            android:name="aas.project.tera.com.autoattendancesystem.CourseListActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity android:name="aas.project.tera.com.autoattendancesystem.classroominformation.ClassRoomInfo"
+            android:label="@string/title_classroominfo"/>
+        <activity android:name="aas.project.tera.com.autoattendancesystem.classroominformation.SingleItemView"
+            android:label="@string/title_singleitemview"/>
+        <activity
+            android:name="aas.project.tera.com.autoattendancesystem.notice.NoticeActivity"
+            android:label="@string/title_notice">
+        </activity>
+
+        <activity android:name="aas.project.tera.com.autoattendancesystem.notice.SingleNoticeView"/>
+        <activity android:name="aas.project.tera.com.autoattendancesystem.CurrentAttendanceStateForStudentActivity"/>
+        <activity android:name="aas.project.tera.com.autoattendancesystem.AttendanceActivity"/>
+        <activity android:name="aas.project.tera.com.autoattendancesystem.AttendanceBookActivity"/>
+        <activity android:name="aas.project.tera.com.autoattendancesystem.CurrentAttendanceStateForProfessorActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/singlenoticeview"
+    android:padding="@dimen/abc_control_padding_material"
+    android:background="#fff">
+
+    <EditText
+        android:id="@+id/noticetitle"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:hint="제목을 입력하세요."/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#ff009999"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/noticetitle"/>
+
+    <EditText
+        android:id="@+id/noticebody"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:hint="내용을 입력해주세요."
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/line"
+        android:gravity="top"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/btn_notice_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noticebody"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:background="@drawable/notice_modify"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="확인"/>
+
+</RelativeLayout>

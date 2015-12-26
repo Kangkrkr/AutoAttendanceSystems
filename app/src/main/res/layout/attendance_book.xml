@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/current_lecture_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/current_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#a1dbf2"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/grade_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학년"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:id="@+id/class_number_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/grade_title"
+            android:layout_marginLeft="30dp"
+            android:text="학번"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/class_number_title"
+            android:layout_marginLeft="50dp"
+            android:text="이름"
+            android:textSize="15dp"/>
+
+
+        <TextView
+            android:id="@+id/attendance_state_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name_title"
+            android:layout_marginLeft="65dp"
+            android:text="출결상태"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ff009999"/>
+
+    <ListView
+        android:id="@+id/student_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#ff009999"/>
+
+</LinearLayout>

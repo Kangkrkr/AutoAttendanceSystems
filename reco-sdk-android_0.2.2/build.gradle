@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('reco-sdk-android_0.2.2.jar'))

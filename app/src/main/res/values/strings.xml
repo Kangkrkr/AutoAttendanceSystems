@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">스마트출결시스템</string>
+    <string name="title_classroominfo">전체강의실</string>
+    <string name="title_notice">공지사항</string>
+    <string name="title_singleitemview">강의실 상세정보</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_swipey_tabs">SwipeyTabs</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_choice_lecture">ChoiceLectureActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_attendance">AttendanceActivity</string>
+    <string name="alert_dialog_two_buttons_title">"공지사항을 삭제 하시겠습니까?"</string>
+    <string name="alert_dialog_ok">"예"</string>
+    <string name="alert_dialog_cancel">"아니오"</string>
+
+    <string name="title_activity_main">Filter ListView Tutorial</string>
+    <string name="buildinglabel">"건물명 : "</string>
+    <string name="classroomlabel">"강의실 : "</string>
+    <string name="statelabel">"상태 : "</string>
+</resources>
